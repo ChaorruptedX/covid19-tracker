@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1DA1F2"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="242dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Welcome to"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="308dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Covid-19 Tracker"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="123dp"
+        app:srcCompat="@drawable/logopinpoint" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="@color/white"
+
+        android:fontFamily="@font/roboto_medium"
+        android:onClick="registerUser"
+        android:text="Register"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@color/white"
+
+        android:fontFamily="@font/roboto_medium"
+        android:onClick="loginUser"
+        android:text="Login"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+
+
+
+</RelativeLayout>
