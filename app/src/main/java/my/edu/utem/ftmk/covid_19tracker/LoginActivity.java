@@ -1,4 +1,4 @@
-package my.edu.utem.ftmk.covid_19_tracker;
+package my.edu.utem.ftmk.covid_19tracker;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,7 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void welcome(View view)
     {
-        startActivity(new Intent(LoginActivity.this,WelcomeActivity.class));
+        startActivity(new Intent(LoginActivity.this, my.edu.utem.ftmk.covid_19_tracker.WelcomeActivity.class));
     }
 
     public void login(View view)
@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity {
         String emailDB=dataSnapshot.child(email).child("email").getValue(String.class);
         String phoneNoDB=dataSnapshot.child(email).child("phoneNo").getValue(String.class);
 
-        Intent intent= new Intent(getApplicationContext(), ProfileActivity.class);
+        Intent intent= new Intent(getApplicationContext(), my.edu.utem.ftmk.covid_19_tracker.ProfileActivity.class);
 
         intent.putExtra("name", nameDB);
         intent.putExtra("email", emailDB);

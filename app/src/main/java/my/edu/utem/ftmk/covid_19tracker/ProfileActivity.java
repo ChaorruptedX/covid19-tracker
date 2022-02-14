@@ -1,4 +1,4 @@
-package my.edu.utem.ftmk.covid_19_tracker;
+package my.edu.utem.ftmk.covid_19tracker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
