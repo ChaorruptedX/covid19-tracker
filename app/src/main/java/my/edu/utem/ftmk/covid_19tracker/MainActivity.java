@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
 
         finish();
     }
+
+    public void assessment(View view) {
+        Intent intent = new Intent(this, AssessmentActivity.class);
+        startActivity(intent);
+    }
 }
