@@ -106,7 +106,7 @@ public class LoginActivity extends AppCompatActivity {
         String emailDB=dataSnapshot.child(email).child("email").getValue(String.class);
         String phoneNoDB=dataSnapshot.child(email).child("phoneNo").getValue(String.class);
 
-        Intent intent= new Intent(getApplicationContext(), my.edu.utem.ftmk.covid_19_tracker.ProfileActivity.class);
+        Intent intent= new Intent(getApplicationContext(), my.edu.utem.ftmk.covid_19tracker.ProfileActivity.class);
 
         intent.putExtra("name", nameDB);
         intent.putExtra("email", emailDB);
